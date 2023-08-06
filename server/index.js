@@ -9,6 +9,10 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+app.get("heltz", (_, res) => {
+  return res.send("Server up and Running");
+});
+
 app.use("/api/auth", AuthRoutes);
 
 const server = app.listen(process.env.PORT, () => {
