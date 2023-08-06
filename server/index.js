@@ -9,7 +9,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-app.get("heltz", (_, res) => {
+app.get("helthz", (_, res) => {
   return res.send("Server up and Running");
 });
 
